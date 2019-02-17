@@ -15,8 +15,8 @@ def first_challenge
 
   #your code here
   
-  contacts.each do |key, value|
-    value.each do |k, v|
+  contacts.each do |contact, data|
+    data.each do |attribute, value|
       v.kind_of?(Array) && v.include?("strawberry")? v.delete("strawberry"): nil
     end
 
